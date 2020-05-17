@@ -38,6 +38,7 @@ int main() {
   printf("buf is at: 0x%zx.\n", (size_t) buf);
   printf("buf-blocks is equal to 0x%zx.\n", (size_t) buf - (size_t) blocks);
   printf("buf-win is equal to 0x%zx.\n", (size_t) buf - (size_t) win);
+  printf("%p\n", &win);
   while (mine(buf, blocks));
 
   puts("Before you go, can I know your name?");
